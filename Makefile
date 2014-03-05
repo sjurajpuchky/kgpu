@@ -1,7 +1,16 @@
+KERNEL = 2.6.32-358.el6.x86_64
+CFLAGS = -I/usr/src/kernels/$(KERNEL) 
 SUBDIRS = kgpu services scripts
+CC = gcc $(CFLAGS)
+NVCC = nvcc $(CFLAGS)
+N = @echo
 
 all: $(SUBDIRS)
 
+
+notice:
+		$(N) "Building modules for $(KERNEL)"
+		
 
 .PHONY: $(SUBDIRS)
 

@@ -58,7 +58,7 @@ Try it?
 	video memory size/2.
 
     Software:
-        We compile the CUDA code with nvcc in CUDA 4.0. The OS
+        We compile the CUDA code with $(NVCC) in CUDA 4.0. The OS
 	kernel is vanilla Linux 2.6.39.4. You MUST use a 64bit linux
 	kernel compiled targeting at x86_64!
 
