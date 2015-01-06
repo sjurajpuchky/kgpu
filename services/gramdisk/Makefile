@@ -1,4 +1,4 @@
-obj-m += callgpu.o
+obj-m += gramdiskfn.o
 
 all:
 	cp ../../../kgpu/Module.symvers ./
